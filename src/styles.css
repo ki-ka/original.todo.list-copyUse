@@ -1,4 +1,85 @@
-.App {
+body {
   font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+  margin-left: 6px;
+}
+
+button:hover {
+  background-color: #ff7fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  margin-right: 8px;
+}
+
+.title {
+  width: 400px;
+  height: 40px;
+  margin: 10px;
   text-align: center;
+}
+
+.input-area {
+  background-color: #59f8f8;
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.incomplete-area {
+  background-color: #4affa2;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #fafa4e;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.area-title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.list-row {
+  display: flex;
+  padding-bottom: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-row p {
+  margin-right: 10px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.space {
+  width: 100%;
 }
