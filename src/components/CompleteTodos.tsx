@@ -1,10 +1,12 @@
-export const CompleteTodos = (props) => {
+import { Vals } from "./types/props";
+
+export const CompleteTodos = (props: Vals) => {
   const { completeTodos, onClickReturn } = props;
   return (
     <div className="complete-area">
       <p className="area-title"> 完了したTODO</p>
       <ul>
-        {completeTodos.map((todo, index) => {
+        {completeTodos.map((todo: string, index: number) => {
           return (
             <li>
               <div key={todo} className="list-row">

@@ -9,14 +9,17 @@ export const App = () => {
   const [completeTodos, setCompleteTodos] = useState([]);
   const [memo, setMemo] = useState(false);
 
-  const enterTodoText = (event) => {
+  const enterTodoText = (event: any) => {
     setTodoText(event.target.value);
     event.preventDefault();
   };
 
-  const getTodoText = (event) => setTodoText(event.target.value);
+  const getTodoText = (event: any) => setTodoText(event.target.value);
 
-  const onClickMemo = () => setMemo(!memo);
+  const onClickMemo = (index: number) => {
+    setMemo(!memo);
+    // {memo ? <textarea></textarea> : null}
+  };
 
   const onClickAdd = () => {
     if (todoText === "") return;
@@ -25,13 +28,13 @@ export const App = () => {
     setTodoText("");
   };
 
-  const onClickDelete = (index) => {
+  const onClickDelete = (index: number) => {
     const newIncompleteTodos = [...incompleteTodos];
     newIncompleteTodos.splice(index, 1);
     setIncompleteTodos(newIncompleteTodos);
   };
 
-  const onClickComplete = (index) => {
+  const onClickComplete = (index: number) => {
     const renewIncompleteTodos = [...incompleteTodos];
     renewIncompleteTodos.splice(index, 1);
 
@@ -41,7 +44,7 @@ export const App = () => {
     setCompleteTodos(newCompleteTodods);
   };
 
-  const onClickReturn = (index) => {
+  const onClickReturn = (index: number) => {
     const renewCompleteTodos = [...completeTodos];
     renewCompleteTodos.splice(index, 1);
 

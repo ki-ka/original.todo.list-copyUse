@@ -1,4 +1,6 @@
-export const InputTodos = (props) => {
+import { Vals } from "./types/props";
+
+export const InputTodos = (props: Vals) => {
   const { todoText, getTodoText, onClickAdd, enterTodoText } = props;
   return (
     <div className="input-area">
