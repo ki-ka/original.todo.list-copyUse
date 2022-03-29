@@ -4,10 +4,10 @@ import { IncompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";
 
 export const App = () => {
-  const [todoText, setTodoText] = useState([""]);
-  const [incompleteTodos, setIncompleteTodos] = useState([]);
-  const [completeTodos, setCompleteTodos] = useState([]);
-  const [memo, setMemo] = useState(false);
+  const [todoText, setTodoText] = useState<string>([""]);
+  const [incompleteTodos, setIncompleteTodos] = useState<string[]>([]);
+  const [completeTodos, setCompleteTodos] = useState<string[]>([]);
+  const [memo, setMemo] = useState<boolean>(false);
 
   const enterTodoText = (event: any) => {
     setTodoText(event.target.value);
@@ -23,7 +23,7 @@ export const App = () => {
 
   const onClickAdd = () => {
     if (todoText === "") return;
-    const newTodos = [...incompleteTodos, todoText];
+    const newTodos: Array<string> = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText("");
   };

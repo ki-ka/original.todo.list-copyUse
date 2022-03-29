@@ -1,4 +1,4 @@
-import { Vals } from "./types/props";
+import { Vals } from "../types/props";
 
 export const IncompleteTodos = (props: Vals) => {
   const {

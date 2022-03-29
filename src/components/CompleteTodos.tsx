@@ -1,4 +1,4 @@
-import { Vals } from "./types/props";
+import { Vals } from "../types/props";
 
 export const CompleteTodos = (props: Vals) => {
   const { completeTodos, onClickReturn } = props;
