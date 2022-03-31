@@ -18,7 +18,8 @@ export const App = () => {
 
   const onClickMemo = (index: number) => {
     setMemo(!memo);
-    // {memo ? <textarea></textarea> : null}
+
+    // return memo ? <textarea></textarea> : null;
   };
 
   const onClickAdd = () => {

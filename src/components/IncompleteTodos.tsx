@@ -20,7 +20,7 @@ export const IncompleteTodos = (props: Vals) => {
                 <p>{todo}</p>
                 <div className="space"></div>
                 <button onClick={() => onClickMemo(index)}>メモ</button>
-                {/* {memo ? <textarea></textarea> : null} */}
+                {memo ? <textarea></textarea> : null}
                 <button onClick={() => onClickComplete(index)}>完了</button>
                 <button onClick={() => onClickDelete(index)}>削除</button>
               </div>
