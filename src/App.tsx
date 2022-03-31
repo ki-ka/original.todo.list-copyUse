@@ -17,9 +17,8 @@ export const App = () => {
   const getTodoText = (event: any) => setTodoText(event.target.value);
 
   const onClickMemo = (index: number) => {
-    setMemo(!memo);
-
     // return memo ? <textarea></textarea> : null;
+    setMemo(!memo);
   };
 
   const onClickAdd = () => {
